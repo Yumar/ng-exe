@@ -45,6 +45,8 @@ import { EarningCardBackComponent } from './earning-card/back-side/earning-card-
 import { EarningPieChartComponent } from './earning-card/back-side/earning-pie-chart.component';
 import { EarningCardFrontComponent } from './earning-card/front-side/earning-card-front.component';
 import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earning-live-update-chart.component';
+import { CalendarKitFullCalendarShowcaseComponent } from '../extra-components/calendar-kit/calendar-kit.component';
+import { CalendarKitMonthCellComponent } from '../extra-components/calendar-kit/month-cell/month-cell.component';
 
 @NgModule({
   imports: [
@@ -56,6 +58,8 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
   ],
   declarations: [
     ECommerceComponent,
+    CalendarKitFullCalendarShowcaseComponent,
+    CalendarKitMonthCellComponent,
     StatsCardFrontComponent,
     StatsAreaChartComponent,
     StatsBarAnimationChartComponent,

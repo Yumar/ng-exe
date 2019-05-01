@@ -9,21 +9,17 @@ export class OrdersProfitChartService extends OrdersProfitChartData {
 
   private summary = [
     {
-      title: 'Marketplace',
-      value: 3654,
+      title: 'Masa Muscular',
+      value: 80.9,
     },
     {
-      title: 'Last Month',
-      value: 946,
+      title: 'Masa Grasa',
+      value: 23.6,
     },
     {
-      title: 'Last Week',
-      value: 654,
-    },
-    {
-      title: 'Today',
-      value: 230,
-    },
+      title: 'Peso Total',
+      value: 163.4,
+    }
   ];
 
   constructor(private ordersChartService: OrdersChartData,

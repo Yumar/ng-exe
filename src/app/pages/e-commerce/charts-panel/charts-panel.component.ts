@@ -22,7 +22,6 @@ export class ECommerceChartsPanelComponent implements OnDestroy {
   profitChartData: ProfitChart;
 
   @ViewChild('ordersChart') ordersChart: OrdersChartComponent;
-  @ViewChild('profitChart') profitChart: ProfitChartComponent;
 
   constructor(private ordersProfitChartService: OrdersProfitChartData) {
     this.ordersProfitChartService.getOrderProfitChartSummary()
@@ -32,7 +31,6 @@ export class ECommerceChartsPanelComponent implements OnDestroy {
       });
 
     this.getOrdersChartData(this.period);
-    this.getProfitChartData(this.period);
   }
 
   setPeriodAndGetChartData(value: string): void {
@@ -45,11 +43,9 @@ export class ECommerceChartsPanelComponent implements OnDestroy {
   }
 
   changeTab(selectedTab) {
-    if (selectedTab.tabTitle === 'Profit') {
-      this.profitChart.resizeChart();
-    } else {
+    
       this.ordersChart.resizeChart();
-    }
+    
   }
 
   getOrdersChartData(period: string) {
