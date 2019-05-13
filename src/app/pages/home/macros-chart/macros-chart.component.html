@@ -1,0 +1,9 @@
+<nb-card size="large">
+  <nb-tabset fullWidth (changeTab)="changeTab($event)">
+    <nb-tab tabTitle="Macros">
+      <div class="chart-container">
+        <chart type="pie" [data]="data" [options]="options"></chart>
+      </div>
+    </nb-tab>
+  </nb-tabset>
+</nb-card>
